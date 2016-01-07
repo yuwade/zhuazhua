@@ -1,0 +1,10 @@
+
+function Champion(o){
+    o=o||{};
+    this.name = o.name;
+    this.time = o.time;
+    this.videoUrl = o.videoUrl;
+    this.title = o.title;
+    this.videoLength = o.videoLength;
+    this.embed = o.embed; //<embed>标签
+}
