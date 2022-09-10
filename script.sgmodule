@@ -1,0 +1,12 @@
+#!name=a yy Script Module
+#!desc=Script 脚本过滤
+
+[Script]
+
+requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info\.json.tag=meiyan
+
+requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huduke/Hugo/main/javaScript/unlockVip/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json,tag=xiuxiu
+
+
+[MITM]
+hostname = %APPEND% api.meiyan.com,api.xiuxiu.meitu.com
