@@ -6,7 +6,16 @@
 requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info\.json.tag=meiyan
 
 requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huduke/Hugo/main/javaScript/unlockVip/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json,tag=xiuxiu
+# Name: 美图秀秀 
+# Author: I-am-R-E/QuantumultX
+# hostname: api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
+# Type: http-response
+# Pattern: ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/.*$ 
+# Script-path: https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
+# Availability: 2022/09/09 ✔
+# Tips: 注：解锁高级会员（包括但不限于：付费海报模板、高级滤镜、高级素材等），无须登陆
+美图秀秀 = type=http-response, requires-body=1, pattern=^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/.*$ , script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
 
 
 [MITM]
-hostname = %APPEND% api.meiyan.com,api.xiuxiu.meitu.com
+hostname = %APPEND% api.meiyan.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
